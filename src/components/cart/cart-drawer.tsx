@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 import { CartItem } from "./cart-item"
-import { CartSummary } from "./cart-summary"
+import { FreeShippingProgress } from "./free-shipping-progress"
 import { useCartStore } from "@/store/cart"
 import { formatPrice } from "@/lib/utils"
 
@@ -46,6 +46,9 @@ export function CartDrawer() {
           <SheetTitle className="mt-2 text-2xl font-bold tracking-tight">
             Cart ({items.length} {items.length === 1 ? "item" : "items"})
           </SheetTitle>
+          <div className="mt-4">
+            <FreeShippingProgress subtotal={subtotal} />
+          </div>
         </SheetHeader>
 
         {items.length === 0 ? (

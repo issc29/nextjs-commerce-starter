@@ -93,6 +93,7 @@
     "total": "Total",
     "shippingNote": "Shipping and taxes calculated at checkout.",
     "freeShippingProgress": "Add {amount} more for free shipping",
+    "freeShippingUnlocked": "You've unlocked free shipping!",
     "remove": "Remove {name}"
   },
   "wishlist": {

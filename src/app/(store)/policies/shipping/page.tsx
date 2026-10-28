@@ -17,7 +17,7 @@ export default function ShippingPolicyPage() {
           <li>Standard Shipping (5-7 business days): $5.99</li>
           <li>Express Shipping (2-3 business days): $12.99</li>
           <li>Overnight Shipping (1 business day): $24.99</li>
-          <li>Free shipping on all orders over $75</li>
+          <li>Free shipping on all orders over $100</li>
         </ul>
 
         <h2 className="text-xl font-semibold text-foreground">

@@ -93,6 +93,7 @@
     "total": "Total",
     "shippingNote": "Envío e impuestos calculados al pagar.",
     "freeShippingProgress": "Añade {amount} más para envío gratis",
+    "freeShippingUnlocked": "¡Ya tienes envío gratis!",
     "remove": "Eliminar {name}"
   },
   "wishlist": {
