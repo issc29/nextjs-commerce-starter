@@ -90,7 +90,7 @@ export const useCartStore = create<CartState>()(
         set((state) => ({
           items: state.items.map((i) =>
             i.variantId === variantId
-              ? { ...i, quantity, lineTotal: i.price * quantity }
+              ? { ...i, quantity, lineTotal: i.price * i.quantity }
               : i
           ),
         }))
