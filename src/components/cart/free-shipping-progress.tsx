@@ -30,7 +30,7 @@ export function FreeShippingProgress({ subtotal }: FreeShippingProgressProps) {
         <span>{message}</span>
       </p>
       <div
-        className="h-1.5 overflow-hidden rounded-full bg-muted"
+        className="h-2 w-full overflow-hidden rounded-full bg-foreground/15"
         role="progressbar"
         aria-valuemin={0}
         aria-valuemax={100}
