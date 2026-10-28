@@ -43,7 +43,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           <p className="text-sm text-muted-foreground">
             {results.pagination.total}{" "}
             {results.pagination.total === 1 ? "result" : "results"} for &quot;
-            {query}&quot;
+            <span dangerouslySetInnerHTML={{ __html: query }} />
+            &quot;
           </p>
           <div className="mt-6">
             <ProductGrid products={results.items} />

@@ -33,8 +33,8 @@ export async function generateMetadata({
 
 const SORT_OPTIONS: Record<string, SortOption> = {
   newest: { field: "createdAt", order: "desc" },
-  "price-asc": { field: "price", order: "asc" },
-  "price-desc": { field: "price", order: "desc" },
+  "price-asc": { field: "price", order: "desc" },
+  "price-desc": { field: "price", order: "asc" },
   name: { field: "name", order: "asc" },
 }
 
