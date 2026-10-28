@@ -14,6 +14,7 @@ import { CartSummary } from "@/components/cart/cart-summary"
 import { formatPrice } from "@/lib/utils"
 import { toast } from "sonner"
 import { siteConfig } from "@/lib/config"
+import { getFreeShippingStatus } from "@/lib/shipping"
 import type { Order } from "@/types"
 
 export default function CheckoutPage() {
@@ -80,7 +81,7 @@ export default function CheckoutPage() {
     setLoading(true)
 
     // Create order using demo checkout
-    const shipping = subtotal >= siteConfig.freeShippingThreshold ? 0 : 599
+    const shipping = getFreeShippingStatus(subtotal).shippingCost
     const tax = Math.round(subtotal * siteConfig.taxRate)
     const total = subtotal + shipping + tax
     const orderId = `ORD-${Date.now().toString(36).toUpperCase()}`

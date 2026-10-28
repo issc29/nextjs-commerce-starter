@@ -11,7 +11,7 @@ export const siteConfig = {
     "A free, production-ready Next.js ecommerce starter template built with Tailwind CSS and shadcn/ui. Responsive, accessible, SEO optimized, and ready to connect to any checkout system. Built by Epic Design Labs.",
 
   // Announcement bar (set to "" to hide)
-  announcement: "Free shipping on all orders over $75 — Shop now!",
+  announcement: "Free shipping on all orders over $100 — Shop now!",
 
   // URLs
   url: process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000",
@@ -38,8 +38,9 @@ export const siteConfig = {
     tiktok: "",
   },
 
-  // Shipping
-  freeShippingThreshold: 7500, // in cents ($75.00)
+  // Shipping — amounts are integer cents
+  freeShippingThreshold: 10000, // $100.00
+  standardShippingRate: 599, // $5.99 below the free-shipping threshold
   taxRate: 0.08, // 8%
 
   // Currency & locale
