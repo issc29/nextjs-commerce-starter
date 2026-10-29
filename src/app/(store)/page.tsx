@@ -45,7 +45,7 @@ export default async function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="relative flex h-[650px] items-center justify-center bg-neutral-50">
+      <section className="relative flex h-[650px] items-center justify-center bg-background">
         <div className="mx-auto max-w-3xl px-4 text-center">
           <Badge variant="secondary" className="mb-4">
             Free shipping on orders over {formatPrice(siteConfig.freeShippingThreshold)}
@@ -127,7 +127,7 @@ export default async function HomePage() {
       </section>
 
       {/* Developer CTA */}
-      <section className="border-t bg-neutral-50">
+      <section className="border-t bg-background">
         <div className="mx-auto flex max-w-[1440px] flex-col items-center px-4 py-16 text-center sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
             Need help building your store?
